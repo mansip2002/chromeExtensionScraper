@@ -4,24 +4,46 @@
         <title>Research Scraper</title>
         <style>
             body {
-                max-height: 1000px;
-                background-color: black;
-                color: cornsilk;
-                width: 300px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                max-height: 100%;
+                background-color: dimgray;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                color: white;
+                width: 200px;
             }
-            select {width: 200px;}
+            select {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                width: 200px; 
+                border-radius: 5px;
+            
+            }
+        
             option {padding-bottom: 20px;}
+            button {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-radius: 5px;
+                border: 1px solid transparent;
+                background-color:seashell;
+            }
+            button.search{
+              
+               margin-left: 40px;
+            }
+            script {
+              width: 500px;
+            }
         </style>
     </head>
   <body>    
-    <h1>Searching...</h1>
-    <br/>
+    <h1>article summary</h1>
     <div class="parameters">
       <div class="query">
         <select class="dropdown">
           <option value="date">Date</option>
           <option value="publisher">Journal Name</option>
-          <option value="objective">objective</option>
+          <option value="objective">Objective</option>
           <option value="title">Title</option>
         </select>
       </div>
@@ -31,6 +53,7 @@
       <button class="new-search-parameter">Add Element</button>
       <button class="search">Collect</button>
     </div>
+    <br/>
     <textarea style="display:none;"></textarea>
   </body>
   <script src="popout.js"></script>

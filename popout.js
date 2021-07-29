@@ -3,7 +3,7 @@
 chrome.runtime.onMessage.addListener((msg, sender, response) => {
     if (msg.command == "complete") {
         document.querySelector("textarea").value = JSON.stringify(msg.data);
-        document.querySelector("textarea").style.display = "block";
+        document.querySelector("textarea").style.display = "flex";
     }
 });
 
@@ -38,7 +38,7 @@ document.querySelector(".new-search-parameter").addEventListener("click", functi
         <select class="dropdown">
         <option value="date">Date</option>
         <option value="publisher">Journal Name</option>
-        <option value="objective">objective</option>
+        <option value="objective">Objective</option>
         <option value="title">Title</option>
         </select>
     </div>`;

@@ -14,5 +14,9 @@
         "run_at": "document_end"
       }
     ],
+    "icons": { 
+      "16": "RE16.png",
+      "48": "RE48.png",
+     "128": "RE128.png" },
     "manifest_version": 2
   }
