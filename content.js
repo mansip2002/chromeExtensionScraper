@@ -61,9 +61,10 @@ function dateEvent(obj, index) {
 
 // returns the name of the article
 function titleEvent(obj, index) {
-    var value = document.getElementById("screen-reader-main-title");
+    var value = document.querySelector("#screen-reader-main-title > span");
+    //var value = document.getElementById("screen-reader-main-title");
     var title = value.getElementsByTagName("span");
-    window.ScraperExt.push(title[0].innerHTML);
+    window.ScraperExt.push(value.innerHTML);
     nextSearchItem(obj, index + 1);
 }
 
